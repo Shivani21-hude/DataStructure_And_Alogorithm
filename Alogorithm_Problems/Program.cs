@@ -6,7 +6,8 @@ namespace Alogorithm_Problems
         static void Main(string[] args)
         {
             //InsertionSort.Insertionsort();
-            BubbleSort.Bubblesort();
+            // BubbleSort.Bubblesort();
+            CheckAnagram.CheckTwoStringAreEqualOrNot();
         }
     }
 }
