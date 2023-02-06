@@ -5,7 +5,8 @@ namespace Alogorithm_Problems
     {
         static void Main(string[] args)
         {
-            InsertionSort.Insertionsort();
+            //InsertionSort.Insertionsort();
+            BubbleSort.Bubblesort();
         }
     }
 }

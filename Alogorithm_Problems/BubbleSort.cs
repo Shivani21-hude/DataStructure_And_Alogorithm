@@ -6,19 +6,20 @@ using System.Threading.Tasks;
 
 namespace Alogorithm_Problems
 {
-    internal class InsertionSort
+    internal class BubbleSort
     {
-        public static void Insertionsort()
+        public static void Bubblesort()
         {
-            Console.WriteLine(" *** Insertion Sort ***\n");
-            int  j, temp;
-            Console.WriteLine("Enter n elements for to do insertion sort  :");
-            int n=Convert.ToInt32(Console.ReadLine());
+            //4,1,0,34,21 => 0,1,4,21,34
+            Console.WriteLine(" *** Bubble Sort ***\n");
+            int temp;
+            Console.WriteLine("Enter n elements for to do Bubble Sort  :");
+            int n = Convert.ToInt32(Console.ReadLine());
             int[] arr = new int[n];
 
             Console.Write("Enter the elements :");
 
-            for (int i = 0; i <n; i++)
+            for (int i = 0; i<n; i++)
             {
                arr[i] = Convert.ToInt32(Console.ReadLine());
                
@@ -26,29 +27,23 @@ namespace Alogorithm_Problems
             Console.WriteLine("\n Entered elements are : ");
             foreach (var i in arr)
             {
-                Console.Write(i+" ");
-               
+                Console.Write(i + " ");
+
             }
-            for (int i = 1; i < arr.Length; i++)
+            for (int i = 0; i < arr.Length - 1; i++)
             {
-                temp = arr[i];
-                j = i - 1;
-                for(j= i - 1; j >= 0;)
+                for (int j = 0; j < arr.Length - 1; j++)
                 {
-                    if (temp < arr[j])
+                    if (arr[j] > arr[j + 1])
                     {
-                        arr[j + 1] = arr[j];
-                        j--;
+                        temp = arr[j];
+                        arr[j] = arr[j + 1];
                         arr[j + 1] = temp;
                     }
-                    else
-                    {
-                        break;
-                    }
                 }
-             }
+            }
             Console.WriteLine("\n Sorted array is :");
-           
+
             foreach (int a in arr)
             {
                 Console.Write(a + " ");
