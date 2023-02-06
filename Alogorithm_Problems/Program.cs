@@ -7,7 +7,8 @@ namespace Alogorithm_Problems
         {
             //InsertionSort.Insertionsort();
             // BubbleSort.Bubblesort();
-            CheckAnagram.CheckTwoStringAreEqualOrNot();
+            //CheckAnagram.CheckTwoStringAreEqualOrNot();
+            PrimeNumbers.FindPrimeNumbers();
         }
     }
 }

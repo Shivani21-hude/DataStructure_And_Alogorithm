@@ -11,7 +11,7 @@ namespace Alogorithm_Problems
         public static void CheckTwoStringAreEqualOrNot()
         {
             //anagram means to check Two strings of char are equal or not
-            Console.WriteLine(" ** To check two strings are anagram or not");
+            Console.WriteLine(" ** To check two strings are anagram or not\n");
 
             Console.WriteLine("Enter first string :");
             string str1 = Console.ReadLine();
